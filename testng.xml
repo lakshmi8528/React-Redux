@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="resources.Listeners"/>
+</listeners>
+
+  <test name="Validating Home Page">
+    <classes>
+      <class name="TestScripts.HomePage"/>
+          </classes>
+      </test>
+      
+    <test name="Validating Tree Page">
+         <classes>
+      <class name="TestScripts.validateHeaders_Tree"/>       
+      <class name="TestScripts.validateFeatures_Tree"/>
+      <!--<class name="Academy.validateDragandDrop_Tree"/> -->
+       </classes>
+      </test>
+       
+      
+            <test name="Validating Complex Page">
+         <classes>
+      <class name="TestScripts.validateHeaders_Complex"/>
+      <class name="TestScripts.validateFeatures_Complex"/>       
+      <class name="TestScripts.validateCheckallcheckbox_Complex"/>
+       </classes>
+      </test>
+   <!-- Test -->
+</suite> <!-- Suite -->
